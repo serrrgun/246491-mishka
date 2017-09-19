@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Турищев](https://up.htmlacademy.ru/adaptive/12/user/246491).
-* Наставник: [Антон Попов].
+* Наставник: [Антон Попов] (https://up.htmlacademy.ru/profile/joker) .
 
 ---
 
