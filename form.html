@@ -5,116 +5,88 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <!-- header -->
     <header class="header">
-      <div class="header__logo">
-        <a href="index.html">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="http://placehold.it/150x100"  alt="Логотип Мишка">
-        </a>
-      </div>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" title="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__link" href="#">Вязание на заказ</a>
+          <form class="search" action="#" method="post">
+            <input class="search__field" type="search" placeholder="Поиск по сайту">
+          </form>
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </div>
       </nav>
     </header>
-    <!-- end header -->
-    <!-- main page-->
     <main class="page-main">
-      <!-- блок с текстом -->
-      <section class="production">
-        <h1 class="production__caption">Вязание на заказ</h1>
-      </section>
-      <!-- конец блока стекстом -->
-      <!-- форма заказа -->
+      <h1 class="page-main__title">Вязание на заказ</h1>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <p class="form__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.
         </p>
-        <div class="form__type form__type--radio">
+        <div class="form__type">
           <h2 class="form-title">Тип</h2>
           <input class="form__radio-input visually-hidden" type="radio" name="accessory" id="accessory">
           <label class="form__radio-label" for="accessory">Аксессуар для интерьера</label>
           <input class="form__radio-input visually-hidden" type="radio" name="toys" id="toys">
           <label class="form__radio-label">Детская игрушка</label>
         </div>
-        <div class="form__type form__type--checkbox">
+        <div class="form__type">
           <h2 class="form__title">Цвет</h2>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" id="white">
-          <label class="form__checkbox-label visually-hidden" for="white">Белый</label>
+          <label class="form__checkbox-label" for="white">Белый</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="gray" id="gray">
-          <label class="form__checkbox-label visually-hidden" for="gray">Серый</label>
+          <label class="form__checkbox-label" for="gray">Серый</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-          <label class="form__checkbox-label visually-hidden" for="tiffany">"Тиффани"</label>
+          <label class="form__checkbox-label" for="tiffany">"Тиффани"</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="black" id="black">
-          <label class="form__checkbox-label visually-hidden" for="black">Черный</label>
+          <label class="form__checkbox-label" for="black">Черный</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="pink" id="pink">
-          <label class="form__checkbox-label visually-hidden" for="pink">Розовый</label>
+          <label class="form__checkbox-label" for="pink">Розовый</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="orange" id="orange">
-          <label class="form__checkbox-label visually-hidden" for="orange">Оранжевый</label>
+          <label class="form__checkbox-label" for="orange">Оранжевый</label>
         </div>
-        <div class="form__type form__type--name">
-          <h2 class="form__tiitle">ФИО</h2>
-          <label class="form__name">
-          <span class="form__input-label">Фамилия:</span>
-          <input class="form__input" type="text" name="lastname" placeholder="Укажите фамилию">
-          </label>
-          <label>
-          <span class="form__input-label">Имя:</span>
-          <input class="form__input" type="text" name="firstname" placeholder="Введите ваше имя">
-          </label>
-          <label>
-          <span class="form__input-label">Отчество:</span>
-          <input class="form__input" type="text" name="middlename" placeholder="Отчество, если желаете">
-          </label>
+        <div class="form__type">
+          <h2 class="form__title">ФИО</h2>
+          <label class="form__input-label" for="lastname">Фамилия:</label>
+          <input class="form__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию">
+          <label class="form__input-label" for="firstname">Имя:</label>
+          <input class="form__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя">
+          <label class="form__input-label" for="middlename">Отчество:</label>
+          <input class="form__input" type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
         </div>
-        <div class="form__type form__type--phone">
+        <div class="form__type">
           <h2 class="form__title">тел</h2>
-          <div class="form__input__wrapper">
+          <div class="form__type--phone">
             <input class="form__input" type="tel" id="tel" placeholder="+7 XXX XX XX">
           </div>
         </div>
-        <div class="form__type form__type--email">
+        <div class="form__type">
           <h2 class="form__title">e-mail</h2>
-          <div class="form__input__wrapper">
+          <div class="form__type--email">
             <input class="form__input" type="email" id="email" placeholder="Ваш e-mail">
           </div>
         </div>
-        <div class="form__type form__type--textarea">
+        <div class="form__type">
           <h2 class="form__title">доп</h2>
-          <div class="form__input-wrapper">
-            <textarea class="form__input form__input--add" id="add"
+          <textarea class="form__textarea" id="add"
               rows="6" placeholder="Опишите все всши пожелания к заказу">
-            </textarea>
-          </div>
+          </textarea>
         </div>
-        <button class="form__button">Отправить заказ</button>
+        <span class=""><sup>*</sup>Поля обязательные для заполнения</span>
+        <button type="submit" class="form__button button">Отправить заказ</button>
       </form>
-      <!-- конец блока с формой -->
     </main>
-    <!-- end main page -->
-    <!-- footer -->
     <footer class="footer">
       <div class="footer__container">
-        <ul class="footer__social">
-          <li class="footer__social-item footer__social-item--insta">инстаграмм</li>
-          <li class="footer__social-item footer__social-item--fb">фейсбук</li>
-          <li class="footer__social-item footer__social-item--tw">твиттер</li>
-        </ul>
+        <div class="social">
+          <a href="#" class="social__item social__item--insta">инстаграмм</a>
+          <a href="#" class="social__item social__item--fb">фейсбук</a>
+          <a href="#" class="social__item social__item--tw">твиттер</a>
+        </div>
         <div class="footer__developer">
           <span class="footer__by">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__logo">
@@ -123,8 +95,5 @@
         </div>
       </div>
     </footer>
-    <!-- end footer -->
   </body>
 </html>
-COPY TO CLIPBOARD	 SELECT ALL
-© FreeFormatter.com - FREEFORMATTER is a d/b/a of 10174785 Canada Inc. - Copyright Notice - Privacy Statement - Terms

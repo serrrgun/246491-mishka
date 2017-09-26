@@ -5,36 +5,24 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <!-- header -->
     <header class="header">
-      <div class="header__logo">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="http://placehold.it/150x100"  alt="Логотип Мишка">
-      </div>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" title="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <form class="search" action="#" method="post">
+            <input class="search__field" type="search" placeholder="Поиск по сайту">
+          </form>
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </div>
       </nav>
     </header>
-    <!-- end header -->
-    <!-- main page -->
     <main class="page-main">
-      <!-- блок с картинкой и ссылками -->
-      <section class="production">
+      <section class="production production__block--image">
         <h1 class="production__caption">
           Милые штучки ручной работы для дома
         </h1>
@@ -43,36 +31,32 @@
           <a href="#" class="production__item production__item--toys">Детские игрушки</a>
         </div>
       </section>
-      <!-- конец блока с картинкой и ссылками -->
-      <!-- блок карточки товара -->
-      <section class="product">
-        <div class="product__item-title">
-          <h1>Вязаные корзинки</h1>
-          <span class="product__item-of-week">Товар недели</span>
+      <article class="special">
+        <div class="special__item-title">
+          <h2>Вязаные корзинки</h2>
+          <h4 class="special__item-of-week">Товар недели</h4>
         </div>
-        <p class="product__description">Экологически чистая пряжа, ручная работа.   Доступная в шести расцветках, и трех размерач</p>
-        <ul class="product__characteristics">
-          <li class="product__characteristics">
-            <span>Цвет:</span>
-            "Тиффани"/Серый
-          </li>
-          <li class="product__characteristics">
-            <span>Диаметр:</span>
-            25 см
-          </li>
-          <li class="product__characteristics">
-            <span>Высота:</span>
-            15 см
-          </li>
-        </ul>
+        <p class="special__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
+        <table class="special__characteristics">
+          <tr>
+            <th>Цвет:</th>
+            <td>"Тиффант"/серый</td>
+          </tr>
+          <tr>
+            <th>Диаметр:</th>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <th>Высота:</th>
+            <td>15 см</td>
+          </tr>
+        </table>
         <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
         <div class="product__buy">
-          <span class="product__price">Цена: 990 руб.</span>
-          <button class="product__button">Заказать</button>
+          <span class="product__price">Цена:990 руб.</span>
+          <a href="#" class="product__button button">Заказать</a>
         </div>
-      </section>
-      <!-- конец карточки товара -->
-      <!-- коротко о нас -->
+      </article>
       <section class="description">
         <h2>Коротко о нас</h2>
         <ul class="description__list">
@@ -84,9 +68,8 @@
           <li class="description__item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <!-- коротко о нас -->
-      <!-- отзывы -->
       <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__slide">
           <p class="reviews__user">
             Я молодая мама, но все равно фотографии не набирали и блтзко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали болеестильные, а такженабирают больше лайков!
@@ -97,45 +80,36 @@
           </div>
         </blockquote>
         <div class="reviews__controls">
-          <button class="rewiews__control-button rewiews__control-button--backward">
-          <img src="http://placehold.it/130x50" alt="назад">
-          </button>
-          <button class="rewiews__control-button rewiews__control-button--next">
-          <img src="http://placehold.it/130x50" alt="вперед">
-          </button>
-          <a href="#" class="reviews__button">Написать</a>
+          <button class="rewiews__control-button rewiews__control-button--backward"></button>
+          <button class="rewiews__control-button rewiews__control-button--next"></button>
+          <a href="#" class="reviews__button button">Написать</a>
         </div>
       </section>
-      <!-- конец раздела отзывы -->
-      <!-- контакты -->
       <section class="contacts">
-        <div class="contacts__text">
-          <h2>Контакты</h2>
-          <span class="contacts__mail">e-mail:</span>
-          <a href="#">info@mimimishkashop.ru</a>
-          <span class="contacts__address">адрес:</span>
-          <span class="contacts__address-info">
-          г. Санкт-Петербург,
-          ул. Большая Конюшенная,
-          д. 19/8, офис 101
-          </span>
-        </div>
+        <h2 class="contacts__title">Контакты</h2>
+        <tabel class="contacts__address">
+          <tr>
+            <th>e-mail:</th>
+            <td>info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <th>адрес:</th>
+            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </tabel>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616492023!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1506102576390" width="322" height="457" style="border:0" allowfullscreen></iframe>
         </div>
-        <a href="#" class="contacts__button">напишите нам</a>
+        <a href="#" class="contacts__button button">напишите нам</a>
       </section>
     </main>
-    <!-- конец раздела контакты -->
-    <!-- end main page -->
-    <!-- footer -->
     <footer class="footer">
       <div class="footer__container">
-        <ul class="footer__social">
-          <li class="footer__social-item footer__social-item--insta">инстаграмм</li>
-          <li class="footer__social-item footer__social-item--fb">фейсбук</li>
-          <li class="footer__social-item footer__social-item--tw">твиттер</li>
-        </ul>
+        <div class="social">
+          <a href="#" class="social__item social__item--insta">инстаграмм</a>
+          <a href="#" class="social__item social__item--fb">фейсбук</a>
+          <a href="#" class="social__item social__item--tw">твиттер</a>
+        </div>
         <div class="footer__developer">
           <span class="footer__by">Разработано</span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__logo">
@@ -144,11 +118,9 @@
         </div>
       </div>
     </footer>
-    <!-- end footer -->
-    <!-- modal window -->
     <div class="modal">
-      <span class="modal__title">добавить в корзину</span>
-      <span class="modal__choice">Выберете размер:</span>
+      <h3 class="modal__title">добавить в корзину</h3>
+      <h4 class="modal__choice">Выберете размер:</h4>
       <div class="modal__size">
         <button class="modal__size-item">s</button>
         <button class="modal__size-item">m</button>
@@ -156,6 +128,5 @@
       </div>
       <button class="modal__button">добавить</button>
     </div>
-    <!-- end modal window -->
   </body>
 </html>
