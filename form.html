@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/150x100"  alt="Логотип Мишка">
+        <img class="header__logo-image" src="img/logo-mobile.svg"  alt="Логотип Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" title="button">Открыть меню</button>
@@ -28,14 +29,14 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.
         </p>
         <div class="form__type">
-          <h2 class="form-title">Тип</h2>
+          <h2 class="form__title">ТИП</h2>
           <input class="form__radio-input visually-hidden" type="radio" name="accessory" id="accessory">
           <label class="form__radio-label" for="accessory">Аксессуар для интерьера</label>
           <input class="form__radio-input visually-hidden" type="radio" name="toys" id="toys">
           <label class="form__radio-label">Детская игрушка</label>
         </div>
         <div class="form__type">
-          <h2 class="form__title">Цвет</h2>
+          <h2 class="form__title">ЦВЕТ</h2>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" id="white">
           <label class="form__checkbox-label" for="white">Белый</label>
           <input class="form__checkbox-input visually-hidden" type="checkbox" name="gray" id="gray">
@@ -59,25 +60,25 @@
           <input class="form__input" type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
         </div>
         <div class="form__type">
-          <h2 class="form__title">тел</h2>
+          <h2 class="form__title">ТЕЛ</h2>
           <div class="form__type--phone">
             <input class="form__input" type="tel" id="tel" placeholder="+7 XXX XX XX">
           </div>
         </div>
         <div class="form__type">
-          <h2 class="form__title">e-mail</h2>
+          <h2 class="form__title">E-MAIL</h2>
           <div class="form__type--email">
             <input class="form__input" type="email" id="email" placeholder="Ваш e-mail">
           </div>
         </div>
         <div class="form__type">
-          <h2 class="form__title">доп</h2>
+          <h2 class="form__title">ДОП</h2>
           <textarea class="form__textarea" id="add"
               rows="6" placeholder="Опишите все всши пожелания к заказу">
           </textarea>
         </div>
         <span class=""><sup>*</sup>Поля обязательные для заполнения</span>
-        <button type="submit" class="form__button button">Отправить заказ</button>
+        <button type="submit" class="form__button button">ОТПРАВИТЬ ЗАКАЗ</button>
       </form>
     </main>
     <footer class="footer">

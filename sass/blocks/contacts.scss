@@ -1,0 +1,33 @@
+.contacts {
+  margin: 0;
+
+}
+
+.contacts__title {
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__address {
+  display: block;
+  padding: 0 30px;
+  margin-bottom: 35px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #f4e9d7;
+}
+
+.contacts__button {
+  margin: 38px 30px;
+}
