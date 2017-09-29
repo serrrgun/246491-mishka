@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/150x100"  alt="Логотип Мишка">
-      </a>
+      <h1 class="visually-hidden">сайт мазазина товаров ручной работы "Мишка"</h1>
       <nav class="main-nav">
-        <button class="main-nav__toggle" title="button">Открыть меню</button>
+        <div class="main-nav__menu">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg"  alt="Логотип Мишка">
+          </a>
+          <button class="main-nav__toggle" title="button">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          <form class="search" action="#" method="post">
+          <form class="main-nav__search" action="#" method="post">
             <input class="search__field" type="search" placeholder="Поиск по сайту">
           </form>
           <a class="main-nav__link" href="#">Корзина: пока пуста</a>
@@ -40,7 +44,7 @@
         <table class="special__characteristics">
           <tr>
             <th>Цвет:</th>
-            <td>"Тиффант"/серый</td>
+            <td>"Тиффани"/серый</td>
           </tr>
           <tr>
             <th>Диаметр:</th>
@@ -51,14 +55,14 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
+        <img src="/img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
         <div class="product__buy">
           <span class="product__price">Цена:990 руб.</span>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button">ЗАКАЗАТЬ</a>
         </div>
       </article>
       <section class="description">
-        <h2>Коротко о нас</h2>
+        <h2>Коротко о нас:</h2>
         <ul class="description__list">
           <li class="description__item">Экологически чистые материалы</li>
           <li class="description__item">Скандинавский стиль по российской   цене</li>
@@ -82,7 +86,7 @@
         <div class="reviews__controls">
           <button class="rewiews__control-button rewiews__control-button--backward"></button>
           <button class="rewiews__control-button rewiews__control-button--next"></button>
-          <a href="#" class="reviews__button button">Написать</a>
+          <a href="#" class="reviews__button button">НАПИСАТЬ</a>
         </div>
       </section>
       <section class="contacts">
@@ -98,9 +102,9 @@
           </tr>
         </tabel>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616492023!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1506102576390" width="322" height="457" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616492023!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1506102576390" width="320" height="457" style="border:0" allowfullscreen></iframe>
         </div>
-        <a href="#" class="contacts__button button">напишите нам</a>
+        <a href="#" class="contacts__button button">НАПИШИТЕ НАМ</a>
       </section>
     </main>
     <footer class="footer">
@@ -119,14 +123,17 @@
       </div>
     </footer>
     <div class="modal">
-      <h3 class="modal__title">добавить в корзину</h3>
-      <h4 class="modal__choice">Выберете размер:</h4>
-      <div class="modal__size">
-        <button class="modal__size-item">s</button>
-        <button class="modal__size-item">m</button>
-        <button class="modal__size-item">l</button>
-      </div>
-      <button class="modal__button">добавить</button>
+      <h3 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h3>
+      <p class="modal__choice">Выберете размер:</p>
+      <form class="modal__form">
+        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--s" id="s" value="s" >
+        <label for="s" class="modal__check">s</label>
+        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--m" id="m" value="s" >
+        <label for="m" class="modal__check">m</label>
+        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--l" id="l" value="s" >
+        <label for="l" class="modal__check">l</label>
+        <button type="submit" class="modal__button button">ДОБАВИТЬ</button>
+      </form>
     </div>
   </body>
 </html>

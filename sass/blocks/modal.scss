@@ -1,0 +1,27 @@
+.modal {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.modal__title {
+  display: block;
+  padding: 0 50px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.modal__choice {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+}
+
+.modal__button {
+  font-size: 17px;
+  line-height: 16px;
+  background-color: #63d1bb;
+  color: #ffffff;
+  border: none;
+}
