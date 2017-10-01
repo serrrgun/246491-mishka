@@ -1,9 +1,19 @@
 .main-nav {
-  border-bottom: 1px solid $border-color;
+  //
 }
 
 .main-nav__menu {
+  display: flex;
+  justify-content: space-between;
   background-color: $white;
+  border-bottom: 1px solid $border-color;
+}
+
+.main-nav__logo{
+  margin-left: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transform: translateX(-50%);
 }
 
 .main-nav__wrapper {
@@ -11,12 +21,21 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding-left: 23.75%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-right: 23.75%;
   text-decoration: none;
+  font-weight: 700;
   color: $black;
   border-bottom: 1px solid $border-color;
 }
 
 .main-nav__search {
+  padding-left: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: $black;
   border-bottom: 1px solid $border-color;
 }
