@@ -1,9 +1,17 @@
 .footer {
-  //
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $background-gray;
 }
 
 .footer__developer {
-  //
+  display: flex;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .footer__by {
