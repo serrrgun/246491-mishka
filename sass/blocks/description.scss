@@ -1,6 +1,9 @@
 .description {
-  margin: 0;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .description h2 {
@@ -15,6 +18,7 @@
 }
 
 .description__item {
+  height: 100px;
   margin-top: 25px;
   font-size: 17px;
   font-weight: 700;
