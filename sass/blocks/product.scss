@@ -1,7 +1,3 @@
-.container {
-  padding: 0 30px;
-}
-
 .product {
   margin-top: 30px;
   border-bottom: 1px $border-color;
@@ -14,14 +10,12 @@
   padding-top: 20px;
   font-size: 17px;
   font-weight: 700;
-  line-height: 24px;
   color: $black;
 }
 
 .product__description {
   padding: 0 30px;
   font-size: 15px;
-  line-height: 30px;
   color: $gray;
   font-weight: 400;
 }
