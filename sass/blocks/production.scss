@@ -14,7 +14,7 @@
 
   font-size: 27px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }
 
 .production__item-container {
@@ -29,14 +29,22 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 }
 
 .production__item--interior {
-  background-color: #63d1bb;
+  background-color: $green-lighten;
+
+  &:hover {
+    background-color: $green-lighten-hover;
+  }
 }
 
 .production__item--toys {
-  background-color: #56c3b2;
+  background-color: $green-darken;
+
+  &:hover {
+    background-color: $green-darken-hover;
+  }
 }

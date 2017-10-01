@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .special__item-title h2 {
@@ -10,7 +10,7 @@
 
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }
 
 .special__item-title h4 {
@@ -20,12 +20,12 @@
 
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: $green-lighten;
 }
 
 .special__description {
   margin-bottom: 10px;
-  color: #444444;
+  color: $gray;
   font-size: 15px;
   line-height: 28px;
   font-weight: 400;
@@ -33,6 +33,7 @@
 
 .special__characteristics {
   margin-bottom: 28px;
+  color: $gray;
 }
 
 .special__characteristics th {
@@ -42,7 +43,7 @@
 }
 
 .special__characteristics tr {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $border-color;
 }
 
 .product__buy {
@@ -57,5 +58,5 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #444444;
+  color: $gray;
 }

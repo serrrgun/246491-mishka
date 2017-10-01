@@ -14,14 +14,14 @@
 .modal__choice {
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $gray;
   text-align: center;
 }
 
 .modal__button {
   font-size: 17px;
   line-height: 16px;
-  background-color: #63d1bb;
-  color: #ffffff;
+  background-color: $green-lighten;
+  color: $white;
   border: none;
 }

@@ -7,7 +7,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 }
 
 .contacts__address {
@@ -17,6 +17,7 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  color: $gray;
 }
 
 .contacts__map {
@@ -24,7 +25,7 @@
   padding: 0;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: #f4e9d7;
+  background-color: $gray;
 }
 
 .contacts__button {
