@@ -1,26 +1,61 @@
 .form {
+  display: flex;
+  flex-direction: column;
   padding: 0 30px;
   background-color: $white;
 }
 
 .form__description {
   display: block;
-
   font-size: 15px;
+  line-height: 2;
+  color: $gray;
   font-weight: 400;
 }
 
 .form__title {
+  position: relative;
   font-size: 17px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
   color: $green-lighten;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left:30px;
+    display: block;
+    height: 1px;
+    width: 82%;
+    background-color:  $green-lighten;
+    margin-left: 10%;
+
+  }
 }
 
 .form__type {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: 700;
 }
 
 .form__button {
   background-color: $white;
+}
+
+.form__radio-label {
+  margin-top: 20px;
+}
+
+.form__textarea {
+  width: 100%;
+}
+
+.form__radio-input,
+.form__checkbox-label {
+  box-sizing: border-box;
 }

@@ -7,16 +7,19 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-mobile.svg"  alt="Логотип Мишка">
-      </a>
+      <h1 class="visually-hidden">сайт мазазина товаров ручной работы "Мишка"</h1>
       <nav class="main-nav">
-        <button class="main-nav__toggle" title="button">Открыть меню</button>
+        <div class="main-nav__menu">
+          <a class="main-nav__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-mobile.svg"  alt="Логотип Мишка">
+          </a>
+          <button class="main-nav__toggle" title="button">Открыть меню</button>
+        </div>
         <div class="main-nav__wrapper">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           <a class="main-nav__link" href="#">Вязание на заказ</a>
-          <form class="search" action="#" method="post">
-            <input class="search__field" type="search" placeholder="Поиск по сайту">
+          <form class="main-nav__search" action="#" method="post">
+            <input class="main-nav__field" type="search" placeholder="Поиск по сайту">
           </form>
           <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </div>
