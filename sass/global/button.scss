@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: inline-block;
   padding: 15px 0;
   width: 260px;
   text-decoration: none;
@@ -9,4 +9,5 @@
   font-weight: 700;
   line-height: 20px;
   color: $gray;
+  text-transform: uppercase;
 }

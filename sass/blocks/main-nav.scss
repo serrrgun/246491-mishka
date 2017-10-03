@@ -33,9 +33,26 @@
 }
 
 .main-nav__search {
-  padding-left: 75px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: $black;
   border-bottom: 1px solid $border-color;
+}
+
+.main-nav__field {
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 23.75%;
+  padding-right: 23.75%;
+  font: inherit;
+  border: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $black;
+    font-weight: 700;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    opacity: 0.6;
+  }
 }

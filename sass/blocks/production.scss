@@ -24,6 +24,7 @@
 }
 
 .production__item {
+  position: relative;
   display: block;
   padding-left: 30px;
   padding-top: 25px;
@@ -41,6 +42,31 @@
   &:hover {
     background-color: $green-lighten-hover;
   }
+
+  &:active {
+    background-color: $green-lighten-hover;
+    color: $white-oppacity;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    width: 40px;
+    height: 62px;
+    margin-top: -30px;
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .production__item--toys {
@@ -48,5 +74,30 @@
 
   &:hover {
     background-color: $green-darken-hover;
+  }
+
+  &:active {
+    background-color: $green-darken-hover;
+    color: $white-oppacity;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }

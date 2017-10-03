@@ -18,9 +18,90 @@
 }
 
 .description__item {
-  height: 100px;
-  margin-top: 25px;
+  position: relative;
+  height: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   font-size: 17px;
   font-weight: 700;
   color: $black;
+  box-sizing: border-box;
+
+  &--ecology::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+  }
+
+  &--hand::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
+
+  &--support::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
 }
