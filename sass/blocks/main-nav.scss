@@ -85,8 +85,8 @@
   &--icon::before {
     content: "";
     position: absolute;
-    left: 50px;
-    top: 28px;
+    left: 11%;
+    top: 25px;
     width: 25px;
     height: 25px;
     background-image: url("../img/icon-cart.svg");
@@ -101,7 +101,6 @@
 }
 
 .main-nav__field {
-  position: relative;
   width: 100%;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -120,12 +119,17 @@
   &:focus::placeholder {
     opacity: 0.6;
   }
+}
+
+.main-nav__field-icon {
+  position: relative;
+  display: block;
 
   &::before {
     content: "";
     position: absolute;
-    left: 50px;
-    top: 28px;
+    left: 11%;
+    top: 27px;
     width: 25px;
     height: 25px;
     background-image: url("../img/icon-search.svg");
