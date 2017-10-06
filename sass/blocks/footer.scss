@@ -48,7 +48,7 @@
     background-size: 100%;
     background-color: $background-gray;
     background-positio: center;
-    }
+  }
 
   &--fb::before {
     content: "";
@@ -63,7 +63,7 @@
     background-size: 65%;
     background-color: $background-gray;
     background-positio: center;
-    }
+  }
 
   &--tw::before {
     content: "";
@@ -78,6 +78,5 @@
     background-size: 100%;
     background-color: $background-gray;
     background-positio: center;
-    }
-
+  }
 }

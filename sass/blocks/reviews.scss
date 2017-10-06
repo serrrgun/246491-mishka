@@ -88,15 +88,13 @@
     background-position: center;
   }
 
-  &:hover::after{
+  &:hover::after {
     opacity: 0.6;
   }
 
   &:active::after {
     opacity: 0.3;
   }
-
-
 }
 
 .reviews__button {
