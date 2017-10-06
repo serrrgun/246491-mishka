@@ -1,6 +1,6 @@
 .main-nav {
-  position: relative;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__menu {
@@ -29,6 +29,10 @@
   cursor: pointer;
   border: none;
   background-color: $white;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav--closed
@@ -62,6 +66,11 @@
   background-repeat: no-repeat;
 }
 
+.main-nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-nav__link {
   position: relative;
   display: block;
@@ -74,6 +83,7 @@
   color: $black;
   border-bottom: 1px solid $border-color;
 
+
   &:hover {
     color: $black-hover;
   }
@@ -82,25 +92,26 @@
     color: $black-active;
   }
 
-  &--icon::before {
-    content: "";
-    position: absolute;
-    left: 11%;
-    top: 25px;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/icon-cart.svg");
-    background-color: $white;
-    background-repeat: no-repeat;
-    opacity: 0.3;
+  &--icon {
+
+
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
   }
 }
 
 .main-nav__search {
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__field {
+  display: block;
   width: 100%;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -119,24 +130,14 @@
   &:focus::placeholder {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__field-icon {
-  position: relative;
-  display: block;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 11%;
-    top: 27px;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/icon-search.svg");
-    background-color: $white;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-  }
 }
 
 @media (max-width: $mobile-width-only)

@@ -1,6 +1,8 @@
 .footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
   padding-left: 30px;
   padding-right: 30px;
   background-color: $background-gray;
@@ -19,4 +21,63 @@
   font-size: 19px;
   color: $black;
   font-weight: 700;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 50px;
+
+
+  &--insta::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $background-gray;
+    background-positio: center;
+    }
+
+  &--fb::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 25px;
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-color: $background-gray;
+    background-positio: center;
+    }
+
+  &--tw::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $background-gray;
+    background-positio: center;
+    }
+
 }
