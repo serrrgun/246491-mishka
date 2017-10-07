@@ -13,6 +13,8 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
   }
 }
 
@@ -220,10 +222,18 @@
   margin-bottom: 30px;
   line-height: 1.1;
   color: $gray;
+  @media (min-width: $tablet) {
+    order: 2;
+
+  }
 }
 
 .form__button {
   width: 100%;
+  @media (min-width: $tablet) {
+    order: 1;
+    width: 260px;
+  }
 }
 
 .form__type--checkbox {
