@@ -3,6 +3,17 @@
   flex-direction: column;
   padding: 0 30px;
   background-color: $white;
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.form__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .form__description {
@@ -11,6 +22,10 @@
   line-height: 2;
   color: $gray;
   font-weight: 400;
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+    margin-bottom: 55px;
+  }
 }
 
 .form__title {
@@ -32,6 +47,14 @@
     width: 82%;
     background-color: $green-lighten;
     margin-left: 10%;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 100px;
+    margin-right: 10%;
   }
 }
 
@@ -41,6 +64,9 @@
   flex-direction: column;
   font-size: 17px;
   font-weight: 700;
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .form__button {
@@ -119,14 +145,17 @@
 
 .form__input-label {
   position: relative;
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
 }
 
 .form__input {
-
   box-sizing: border-box;
   width: 100%;
   height: 50px;
-  padding-bottom: 8px;
+  padding-top: 20px;
   margin-bottom: 18px;
   font-weight: 400;
   color: $gray;
@@ -137,7 +166,12 @@
   transition: border 0.3 ease;
 
   &::placeholder {
-    color: fade($gray, 30%);
+    font-size: 18px;
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet) {
+
   }
 }
 
@@ -150,10 +184,9 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  opacity: 30%;
 }
 
-.form__type-icon path {
+.form__type-icon {
   fill: fade($gray, 20%);
 }
 
@@ -192,6 +225,55 @@
 .form__button {
   width: 100%;
 }
+
+.form__type--checkbox {
+  @media (min-width: $tablet){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+}
+
+.form__checkbox-label {
+  @media (min-width: $tablet) {
+    width: 50%
+  }
+}
+
+.form__inner-name {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__type-phone {
+  @media (min-width: $tablet) {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.form__type-email {
+  @media (min-width: $tablet) {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.form__title--mail {
+  @media (min-width: $tablet) {
+    margin-right: 11%;
+  }
+}
+
+
+
 
 
 
