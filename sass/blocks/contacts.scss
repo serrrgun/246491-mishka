@@ -35,6 +35,11 @@
 }
 
 .contacts__address {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
@@ -43,12 +48,9 @@
   }
 }
 
-.contacts__address tr {
-  //
-}
-
-.contacts__address td {
-  //
+.contacts__address-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .contacts__map {
