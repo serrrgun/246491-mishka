@@ -4,17 +4,33 @@
   margin-top: 25px;
   padding-left: 30px;
   padding-right: 30px;
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .description h2 {
   font-size: 25px;
   color: $black;
+  @media (min-width: $tablet) {
+    font-size: 43px;
+  }
 }
 
 .description__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.description__wrapper {
+  @media (min-width: $tablet) {
+
+  }
 }
 
 .description__item {
@@ -22,10 +38,15 @@
   height: 120px;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 50px;
   font-size: 17px;
   font-weight: 700;
   color: $black;
   box-sizing: border-box;
+
+  @msdia (min-width: $tablet) {
+    font-size: 20px;
+  }
 
   &--ecology::before {
     content: "";
