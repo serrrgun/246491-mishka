@@ -5,6 +5,7 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: $background-gray;
+
   @media (min-width: $tablet) {
     width: 100%;
     padding-left: 50px;
@@ -21,17 +22,17 @@
     width: 100%;
     padding-top: 37px;
     padding-bottom: 40px;
-
   }
 }
 
 .footer__logo {
   display: none;
+
   @media (min-width: $tablet) {
     display: block;
-
   }
 }
+
 .footer__developer {
   display: flex;
 }
@@ -47,6 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $tablet) {
     margin-left: 80px;
   }

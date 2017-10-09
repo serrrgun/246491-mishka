@@ -8,12 +8,10 @@
   @media (min-width: $tablet) {
     padding-left: 50px;
     padding-right: 50px;
-
   }
 }
 
 .special__item-title {
-
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -54,6 +52,7 @@
   color: $gray;
   font-size: 15px;
   font-weight: 400;
+
   @media (min-width: $tablet) {
     width: 49%;
     order: 1;
@@ -74,7 +73,6 @@
   @media (min-width: $tablet) {
     width: 45%;
     order: 3;
-
   }
 }
 
@@ -94,7 +92,6 @@
   @media (min-width: $tablet) {
     width: 45%;
     order: 4;
-
   }
 }
 
@@ -118,8 +115,6 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-
-
   }
 }
 
@@ -127,6 +122,5 @@
   @media (min-width: $tablet) {
     width: 49%;
     order: 2;
-
   }
 }
