@@ -16,6 +16,7 @@
     margin-right: auto;
     margin-bottom: 105px;
     margin-left: auto;
+    max-width: 1050px;
   }
 }
 
@@ -58,16 +59,8 @@
     padding: 0;
     padding-top: 34px;
     padding-bottom: 34px;
-  }
 
-  @media (min-width: $desktop) {
-    font-size: 53px;
-    line-height: 1.1;
-    margin-top: 10px;
-    margin-left: 0;
-
-
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       background-color: $white;
@@ -77,6 +70,27 @@
       height: 85px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-left: 0;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $white;
+      top: 50px;
+      left: -50px;
+      width: 50px;
+      height: 85px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
     }
   }
 }
