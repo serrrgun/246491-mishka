@@ -1,12 +1,23 @@
 .button {
-  display: block;
+  display: inline-block;
   padding: 15px 0;
   width: 260px;
   text-decoration: none;
   text-align: center;
-  border: 2px solid #444444;
+  border: 2px solid $gray;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: #444444;
+  color: $gray;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    background-color: $gray;
+  }
+
+  &:active {
+    color: rgba($white, $oppacity);
+    background-color: $gray;
+  }
 }

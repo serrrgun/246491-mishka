@@ -1,27 +1,41 @@
 .modal {
-  margin: 0;
-  padding: 0 30px;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  top: 25%;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $white;
+  border-top: 1px solid $border-color;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .modal__title {
-  display: block;
-  padding: 0 50px;
+  padding-top: 33px;
+  text-align: center;
   font-size: 25px;
-  line-height: 30px;
   font-weight: 700;
 }
 
 .modal__choice {
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
   text-align: center;
+  font-size: 15px;
+  color: $gray;
 }
 
 .modal__button {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
   font-size: 17px;
-  line-height: 16px;
-  background-color: #63d1bb;
-  color: #ffffff;
+  background-color: $green-lighten;
+  color: $white;
   border: none;
+}
+
+.modal__form {
+  //
 }

@@ -1,23 +1,351 @@
 .description {
-  margin: 0;
-  padding: 0 30px;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $white;
+    background-image: none;
+    padding-top: 26px;
+  }
 }
 
-.description h2 {
+.description__content {
+  margin: 0 auto;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet) {
+    width: 87%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 91%;
+    max-width: 1050px;
+    padding-top: 40px;
+  }
+}
+
+.description__title {
+  font-weight: 700;
   font-size: 25px;
-  line-height: 30px;
-  color: #000000;
+  line-height: 1.2;
+
+  @media (min-width: $tablet) {
+    font-size: 43px;
+    line-height: 1.15;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 67%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-left: auto;
+    font-size: 53px;
+    line-height: 1.1;
+  }
 }
 
 .description__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 66.67%;
+    margin: 0 auto;
+    padding-bottom: 52px;
+  }
 }
 
 .description__item {
-  margin-top: 25px;
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 68px;
   font-size: 17px;
-  line-height: 20px;
   font-weight: 700;
+  line-height: 1.15;
+
+  @media (min-width: $tablet) {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 49%;
+    padding-right: 1%;
+    margin-bottom: 23px;
+    padding-top: 66px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 70px;
+    margin-bottom: 22px;
+  }
+
+  &--ecology {
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
+
+  &--ecology::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--price {
+    @media (min-width: $tablet) {
+      order: 3;
+    }
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+  }
+
+  &--like {
+    @media (min-width: $tablet) {
+      order: 5;
+    }
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+  }
+
+  &--hand {
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
+
+  &--hand::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
+
+  &--support {
+    @media (min-width: $tablet) {
+      order: 4;
+    }
+  }
+
+  &--support::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+
+  &--gift {
+    @media (min-width: $tablet) {
+      order: 6;
+    }
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
 }
+
+/*.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.description h2 {
+  font-size: 25px;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 43px;
+  }
+}
+
+.description__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.description__wrapper {
+  @media (min-width: $tablet) {
+    //
+  }
+}
+
+.description__item {
+  position: relative;
+  height: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $black;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  &--ecology::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+  }
+
+  &--hand::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
+
+  &--support::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 60px;
+    height: 40px;
+    background-color: $white;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+  }
+}
+*/
