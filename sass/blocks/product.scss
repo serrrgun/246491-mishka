@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 97%;
+    width: 91%;
     max-width: 1050px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,11 +61,13 @@
 .product__image-link {
   text-decoration: none;
   background-color: transparent;
+  line-height: 0;
 
   @media (min-width: $tablet) {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 50%;
+    line-height: 0;
   }
 
   @media (min-width: $desktop) {
@@ -76,7 +78,7 @@
 }
 
 .product__post-image {
-  display: block;
+  //
 }
 
 .product__info {
