@@ -83,7 +83,6 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: $white;
       top: 50px;
       left: -50px;
       width: 50px;
@@ -207,6 +206,9 @@
     order: 3;
     width: 31%;
     flex-basis: 31%;
+    margin: 0;
+    margin-top: -50px;
+    margin-left: 150px;
   }
 }
 

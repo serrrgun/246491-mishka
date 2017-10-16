@@ -22,7 +22,10 @@
   }
 
   @media (min-width: $desktop) {
+    width: 91%;
+    max-width: 1050px;
     padding-top: 70px;
+    margin: 0 auto;
   }
 }
 
@@ -182,13 +185,18 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 20.5%;
+    width: 25.5%;
     margin: 0;
     padding-right: 0;
     padding-left: 0;
     position: absolute;
     top: 70px;
     right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 16.67%;
+    top: 80px;
   }
 }
 
