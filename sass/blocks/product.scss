@@ -61,7 +61,10 @@
 .product__image-link {
   text-decoration: none;
   background-color: transparent;
+  flex-grow: 0;
+  flex-shrink: 0;
   line-height: 0;
+  display: block;
 
   @media (min-width: $tablet) {
     flex-grow: 0;
@@ -185,6 +188,10 @@
   @media (min-width: $tablet) {
     padding-right: 8px;
   }
+}
+
+.product-buy__basket-icon {
+  fill: rgba($black, $oppacity);
 }
 
 
