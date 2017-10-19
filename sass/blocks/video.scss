@@ -23,8 +23,20 @@
   position: relative;
   margin-bottom: 25px;
   margin-top: 22px;
+  margin-right: 20px;
   font-size: 17px;
   line-height: 1.4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    }
 
   @media (min-width: $tablet) {
     margin-top: 0;
@@ -48,13 +60,25 @@
   }
 
   @media (min-width: $desktop) {
+    position: relative;
     display: block;
     margin-top: 93px;
-    margin-right: 0;
+    margin-right: 20px;
     margin-bottom: 35px;
     margin-left: 0;
     padding-bottom: 0;
     padding-left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/icon-video.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
