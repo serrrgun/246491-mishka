@@ -1,6 +1,7 @@
 .page-main__inner {
   background-color: $background;
   border: 1px solid transparent;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
