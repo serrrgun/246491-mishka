@@ -6,6 +6,10 @@
   padding-top: 0;
   padding-bottom: 45px;
 
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
   @media (min-width: $tablet) {
     width: 87%;
     padding-left: 50px;
@@ -19,6 +23,14 @@
   @media (min-width: $tablet) {
     padding-bottom: 137px;
     padding-top: 24px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 475px;
+    }
   }
 
   @media (min-width: $desktop) {

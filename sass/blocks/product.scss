@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 97%;
+    width: 91%;
     max-width: 1050px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,11 +61,16 @@
 .product__image-link {
   text-decoration: none;
   background-color: transparent;
+  flex-grow: 0;
+  flex-shrink: 0;
+  line-height: 0;
+  display: block;
 
   @media (min-width: $tablet) {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 50%;
+    line-height: 0;
   }
 
   @media (min-width: $desktop) {
@@ -76,7 +81,7 @@
 }
 
 .product__post-image {
-  display: block;
+  //
 }
 
 .product__info {
@@ -183,6 +188,10 @@
   @media (min-width: $tablet) {
     padding-right: 8px;
   }
+}
+
+.product-buy__basket-icon {
+  fill: rgba($black, $oppacity);
 }
 
 

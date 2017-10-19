@@ -8,6 +8,9 @@
   margin: 0 auto;
   padding-left: 29px;
   padding-right: 29px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   @media (min-width: $tablet) {
     flex-direction: row;
