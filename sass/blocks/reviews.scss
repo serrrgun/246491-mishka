@@ -6,6 +6,10 @@
   padding-top: 0;
   padding-bottom: 45px;
 
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
   @media (min-width: $tablet) {
     width: 87%;
     padding-left: 50px;
