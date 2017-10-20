@@ -66,12 +66,25 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 26%;
+    margin-top: 8px;
   }
 }
 
 .main-nav__logo-image {
+  display: inline-block;
   width: 86px;
   height: 35px;
+
+  @media (min-width: $tablet) {
+    width: 113px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 72px;
+  }
 
   &:hover {
     opacity: $oppacity-light;
