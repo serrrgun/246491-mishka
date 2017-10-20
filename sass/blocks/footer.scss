@@ -53,45 +53,6 @@
   fill: $brown;
 }
 
-.social {
-  padding-top: 26px;
-  padding-right: 0;
-  padding-bottom: 20px;
-  padding-left: 0;
-  text-align: center;
-  border-bottom: 1px solid $border-footer;
-
-  @media (min-width: $tablet) {
-    padding-top: 0;
-    margin-left: 80px;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-top: 0;
-    display: inline-block;
-    vertical-align: top;
-    border-bottom: none;
-  }
-}
-
-.social__item {
-  background-color: transparent;
-
-  &:hover .social__item-icon {
-    fill: $green-darken-hover;
-  }
-
-  &:active .social__item-icon {
-    fill: rgba($green-darken-hover, $oppacity);
-  }
-}
-
-.social__item-icon {
-  margin-right: 10px;
-  margin-left: 12px;
-  fill: $gray;
-  width: 24;
-}
-
 .footer__developer {
   display: block;
   padding-top: 20px;
