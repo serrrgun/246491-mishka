@@ -15,6 +15,7 @@
 }
 
 .description__content {
+  position: relative;
   margin: 0 auto;
   padding-left: 29px;
   padding-right: 29px;
@@ -37,6 +38,8 @@
 }
 
 .description__title {
+  position: relative;
+  display: block;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
