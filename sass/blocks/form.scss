@@ -353,6 +353,7 @@
 
 .form__type--name {
   margin-bottom: 32px;
+  outline: none;
 
   @media (min-width: $tablet) {
     padding-top: 0;
@@ -429,7 +430,8 @@
   padding-left: 0;
   padding-right: 0;
   border: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 2px solid $black;
+  outline: none;
 
   @media (min-width: $tablet) {
     flex-grow: 1;
@@ -437,11 +439,11 @@
   }
 
   &:hover {
-    border-bottom: 1px solid $green-darken;
+    border-bottom: 2px solid $green-darken;
   }
 
   &:focus {
-    border-bottom: 1px solid $green-lighten;
+    border-bottom: 2px solid $green-lighten;
   }
 
   &::placeholder {
