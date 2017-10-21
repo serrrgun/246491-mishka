@@ -7,9 +7,10 @@
   border: 2px solid $gray;
   font-size: 17px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1;
   color: $gray;
   text-transform: uppercase;
+  outline: none;
 
   &:hover {
     color: $white;
