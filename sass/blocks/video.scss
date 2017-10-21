@@ -1,4 +1,186 @@
 .video {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 105px;
+  }
+}
+
+.video__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+  }
+}
+
+.video__title {
+  position: relative;
+  padding-left: 91px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.4;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+    margin-top: -18px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      left: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 25px;
+      left: 78px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 108px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    order: -1;
+    padding-top: 94px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 700px;
+  }
+}
+
+.video__contentn-wrapper {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    order: -1;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -175px;
+    margin-bottom: 0;
+  }
+}
+
+.video__toggle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 102px;
+  height: 78px;
+  margin-left: -51px;
+  cursor: pointer;
+  background: transparent url("../img/icon-play.svg") no-repeat center;
+  border: none;
+  outline: none;
+
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  @media (min-width: $tablet) {
+    top: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    left: 290px;
+    margin-left: 0;
+  }
+}
+
+.video__post {
+  padding-left: 34px;
+  padding-right: 34px;
+
+  @media (min-width: $tablet) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    box-sizing: border-box;
+    width: 350px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+.video__description {
+  font-size: 13px;
+  line-height: 1.9;
+  color: $gray;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.video__button {
+  margin-bottom: 30px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+}
+/*.video {
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
@@ -154,4 +336,4 @@
     margin-left: 0;
     margin-right: 0;
   }
-}
+}*/

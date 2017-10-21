@@ -50,6 +50,14 @@
     flex-wrap: nowrap;
     margin-right: 4.76%;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+  }
 }
 
 .product__post:nth-child(3n) {
@@ -133,6 +141,14 @@
     font-size: 20px;
     line-height: 1.2;
   }
+
+  &:hover {
+    color: rgba($black, $oppacity-light);
+  }
+
+  &:active {
+    color: rgba($black, $oppacity)
+  }
 }
 
 .product__description {
@@ -192,6 +208,14 @@
 
 .product-buy__basket-icon {
   fill: rgba($black, $oppacity);
+
+  &:hover{
+    fill: $green-lighten;
+  }
+
+  &:active {
+    fill: rgba($green-lighten, $oppacity);
+  }
 }
 
 
