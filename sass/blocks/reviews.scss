@@ -5,20 +5,15 @@
   padding-right: 29px;
   padding-top: 0;
   padding-bottom: 45px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: center bottom;
-  background-repeat: repeat-x;
-  background-size: 320px 7px;
 
   @media (min-width: $tablet) {
     width: 87%;
     padding-left: 50px;
     padding-right: 50px;
-    background-size: 768px 17px;
   }
 
   @media (min-width: $desktop) {
-    background-size: 1050px 23px;
+    //
   }
 }
 

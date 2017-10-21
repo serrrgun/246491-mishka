@@ -147,7 +147,7 @@
   }
 
   &:active {
-    color: rgba($black, $oppacity)
+    color: rgba($black, $oppacity);
   }
 }
 
@@ -209,7 +209,7 @@
 .product-buy__basket-icon {
   fill: rgba($black, $oppacity);
 
-  &:hover{
+  &:hover {
     fill: $green-lighten;
   }
 

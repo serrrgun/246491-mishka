@@ -35,6 +35,18 @@
     max-width: 1050px;
     padding-top: 40px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .description__title {

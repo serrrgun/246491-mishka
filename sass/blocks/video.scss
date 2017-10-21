@@ -53,7 +53,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 33px;
     width: 32px;
     height: 32px;
@@ -62,12 +62,12 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet) {
-      left: 40px;
+      left: 42px;
     }
 
     @media (min-width: $desktop) {
-      top: 25px;
-      left: 78px;
+      top: 50px;
+      left: 60px;
     }
   }
 

@@ -8,10 +8,6 @@
   margin: 0 auto;
   padding-left: 29px;
   padding-right: 29px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  background-size: 320px 7px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -24,7 +20,6 @@
     padding-right: 50px;
     padding-top: 0;
     padding-bottom: 0;
-    background-size: 768px 17px;
   }
 
   @media (min-width: $desktop) {
@@ -32,7 +27,6 @@
     width: 91%;
     max-width: 1050px;
     justify-content: flex-end;
-    background-size: 1050px 23px;
   }
 }
 
@@ -209,6 +203,7 @@
   background-color: $background-gray;
   border-style: none;
   max-width: 100%;
+  line-height: 0;
 }
 
 .special__buy {
