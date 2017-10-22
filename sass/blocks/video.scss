@@ -75,7 +75,8 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 1.2;
-    padding-left: 108px;
+    padding-left: 104px;
+    padding-top: 17px;
     margin-bottom: 7px;
   }
 
@@ -107,7 +108,7 @@
 
 .video__toggle {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   width: 102px;
   height: 78px;
