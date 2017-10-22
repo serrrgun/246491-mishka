@@ -10,19 +10,8 @@
     width: 87%;
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  @media (min-width: $desktop) {
-    //
-  }
-}
-
-.reviews__content {
-  position: relative;
-
-  @media (min-width: $tablet) {
-    padding-bottom: 137px;
-    padding-top: 24px;
+    padding-bottom: 65px;
+    padding-top: 0;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
@@ -31,6 +20,23 @@
       background-image: url("../img/review@2x.jpg");
       background-size: 350px 475px;
     }
+
+    @media (min-width: $desktop) {
+      background: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 4px;
+  }
+}
+
+.reviews__content {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 20px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop) {
@@ -38,6 +44,14 @@
     max-width: 1050px;
     padding-top: 70px;
     margin: 0 auto;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 475px;
+    }
   }
 }
 
@@ -50,7 +64,7 @@
   @media (min-width: $tablet) {
     font-size: 43px;
     line-height: 1.2;
-    margin-top: 42px;
+    margin-top: 45px;
     margin-right: 25%;
     margin-bottom: 50px;
     margin-left: -5px;
@@ -78,6 +92,7 @@
   @media (min-width: $desktop) {
     width: 66.67%;
     margin: 0 auto;
+
   }
 }
 
@@ -92,6 +107,11 @@
     line-height: 1.8;
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    width: 800px;
+  }
 }
 
 .reviews__author {
@@ -100,6 +120,10 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 1.4;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 38px;
   }
 }
 
@@ -121,20 +145,29 @@
   margin-top: 5px;
   font-size: 17px;
   line-height: 1.8;
+
+  @media (min-width: $desktop) {
+    margin-top: 1px;
+  }
 }
 
 .reviews__controls {
   display: flex;
   width: 100%;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet) {
     position: absolute;
     right: 0;
-    bottom: 150px;
+    bottom: 56px;
     width: 180px;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 78px;
+    right: -3px;;
   }
 }
 
@@ -207,8 +240,9 @@
   }
 
   @media (min-width: $desktop) {
-    width: 16.67%;
+    width: 15.90%;
     top: 80px;
+    right: 0;
   }
 }
 

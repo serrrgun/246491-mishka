@@ -13,7 +13,7 @@
     position: relative;
     min-height: 746px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center 0;
+    background-position: center -2px;
 
     &::after {
       content: "";
@@ -70,7 +70,7 @@
     flex-grow: 1;
     flex-basis: 87%;
     text-align: right;
-    padding-top: 20px;
+    padding-top: 17px;
     font-size: 15px;
     line-height: 1.5;
   }
@@ -92,19 +92,19 @@
     flex-basis: 510px;
     font-size: 43px;
     line-height: 1.1;
-    padding-top: 110px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-top: 115px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
-    min-height: 476px;
+    min-height: 472px;
   }
 
   @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 1.1;
     flex-basis: 630px;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 19%;
+    padding-right: 19%;
   }
 }
 

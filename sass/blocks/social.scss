@@ -11,10 +11,10 @@
 
   @media (min-width: $tablet) {
     padding-top: 0;
-    margin-left: 80px;
+    margin-left: 78px;
     margin-bottom: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 25px;
     vertical-align: top;
     border-bottom: none;
   }
@@ -37,4 +37,9 @@
   margin-left: 12px;
   fill: $gray;
   width: 24;
+}
+
+.social__item--fb {
+  margin-right: 16px;
+  margin-left: 20px;
 }

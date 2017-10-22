@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 1px;
   position: relative;
 
@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet) {
     position: relative;
+    padding-top: 0;
     background-size: 768px 17px;
   }
 
@@ -17,10 +18,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 0;
+    margin-top: 15px;
     margin-right: auto;
     margin-bottom: 105px;
     margin-left: auto;
+    padding-top: 100px;
     max-width: 1050px;
     background-size: 1050px 23px;
   }
@@ -37,7 +39,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 72px;
     font-size: 0;
   }
 
@@ -45,7 +47,7 @@
     flex-basis: 31%;
     margin-right: 0;
     order: 1;
-    padding-top: 24px;
+    padding-top: 60px;
     padding-right: 30px;
     padding-bottom: 0;
     padding-left: 30px;
@@ -63,15 +65,15 @@
     font-size: 43px;
     line-height: 1.2;
     padding: 0;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 0;
+    padding-bottom: 22px;
 
     &::before {
       content: "";
       position: absolute;
       background-color: $white;
-      top: 0;
-      right: 50px;
+      top: 60px;
+      right: 52px;
       width: 50px;
       height: 85px;
       background-image: url("../img/icon-flag.svg");
@@ -89,8 +91,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50px;
-      left: -50px;
+      top: 62px;
+      left: -75px;
       width: 50px;
       height: 85px;
       background-image: url("../img/icon-flag.svg");
@@ -109,10 +111,11 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     margin-top: 0;
     font-size: 17px;
     line-height: 1.9;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop) {
@@ -128,7 +131,14 @@
 
   @media (min-width: $tablet) {
     &:first-child {
-      margin-right: 50px;
+      margin-right: 70px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:first-child {
+      margin-right: 20px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -137,6 +147,10 @@
   display: inline-block;
   vertical-align: top;
   margin-right: 26px;
+
+  @media (min-width: $tablet) {
+    margin-right: 25px;
+  }
 }
 
 .contacts__value {
@@ -150,6 +164,10 @@
   font-size: 15px;
   line-height: 2;
   border-bottom: 1px solid $green-lighten;
+
+  @media (min-width: $desktop) {
+    font-size: 17px;
+  }
 
   &:hover {
     color: $green-lighten;
@@ -218,6 +236,8 @@
     padding-right: 50px;
     padding-bottom: 0;
     padding-top: 0;
+    margin-top: 52px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop) {
@@ -229,7 +249,7 @@
     flex-basis: 31%;
     margin: 0;
     margin-top: -50px;
-    margin-left: 150px;
+    margin-left: 127px;
   }
 }
 
@@ -245,6 +265,12 @@
 
   @media (min-width: $desktop) {
     //
+  }
+}
+
+.contacts__br {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 

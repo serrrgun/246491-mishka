@@ -40,7 +40,7 @@
 .main-nav__logo--link {
   margin-top: 16px;
   margin-right: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-left: 0;
   text-align: center;
   padding-top: 6px;
@@ -55,8 +55,8 @@
     order: 1;
     text-align: left;
     align-self: flex-start;
-    margin-bottom: 12px;
-    margin-top: 22px;
+    margin-bottom: 10px;
+    margin-top: 16px;
     margin-right: 0;
   }
 
@@ -66,7 +66,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 26%;
-    margin-top: 8px;
+    margin-top: 4px;
   }
 }
 
@@ -84,6 +84,8 @@
   @media (min-width: $desktop) {
     width: 149px;
     height: 72px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   &:hover {
@@ -150,7 +152,7 @@
 .main-nav--opened .main-nav__links {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    top: 78px;
+    top: 62px;
     right: 0;
     z-index: 10;
     width: 100%;
@@ -161,7 +163,7 @@
 .main-nav--opened .main-nav__user {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    top: 250px;
+    top: 222px;
     right: 0;
     z-index: 10;
     width: 100%;
@@ -215,10 +217,10 @@
   border-top: 1px solid $border-color;
   padding-left: 23.75%;
   padding-right: 23.75%;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 27px;
+  padding-top: 27px;
   color: $black;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   display: block;
   line-height: 1.5;
@@ -226,7 +228,7 @@
   @media (min-width: $tablet) {
     border: none;
     z-index: 10;
-    padding-top: 18px;
+    padding-top: 5px;
     padding-right: 34px;
     padding-bottom: 0;
     padding-left: 0;
@@ -258,6 +260,10 @@
   display: none;
   font-size: 15px;
   line-height: 1.6;
+
+  @media (min-width: $desktop) {
+    padding-top: 15px;
+  }
 }
 
 .main-nav__link:first-child {
@@ -266,7 +272,7 @@
 
 .main-nav__link:nth-of-type(even) {
   @media (min-width: $desktop) {
-    padding-left: 28px;
+    padding-left: 24px;
   }
 }
 
@@ -335,8 +341,8 @@
   position: relative;
   display: block;
   border-top: 1px solid $border-color;
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   padding-left: 23.75%;
   padding-right: 15%;
 
@@ -359,7 +365,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 32px;
+  top: 30px;
   left: 10%;
   cursor: pointer;
   fill: rgba($black, $oppacity);
@@ -382,7 +388,7 @@
   position: relative;
   display: block;
   border-top: 1px solid $border-color;
-  padding-top: 32px;
+  padding-top: 27px;
   padding-bottom: 30px;
   padding-left: 23.75%;
   padding-right: 15%;
@@ -396,6 +402,11 @@
     border-top: none;
     padding-left: 72px;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 85px;
+    padding-top: 30px;
   }
 
   &:hover {
@@ -419,8 +430,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 32px;
-  left: 10%;
+  top: 33px;
+  left: 11%;
   cursor: pointer;
   fill: rgba($black, $oppacity);
 }

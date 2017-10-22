@@ -37,7 +37,8 @@
 
   @media (min-width: $tablet) {
     display: block;
-    margin-top: 20px;
+    margin-top: 26px;
+    padding-bottom: 32px;
 
     &:hover .footer__logo-icon {
       fill: $green-darken-hover;
@@ -72,6 +73,10 @@
   color: $black;
   font-weight: 700;
   cursor: auto;
+
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+  }
 
   &:active {
     color: rgba($black, $oppacity);

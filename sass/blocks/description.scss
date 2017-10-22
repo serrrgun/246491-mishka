@@ -1,7 +1,7 @@
 .description {
   position: relative;
   padding-top: 8px;
-  padding-bottom: 45px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
     padding-top: 22px;
@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding-left: 29px;
   padding-right: 29px;
-  padding-top: 0;
+  padding-top: 16px;
   padding-bottom: 0;
 
   background-image: url("../img/bg-zigzag-line.svg");
@@ -32,14 +32,15 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 24px;
     background-size: 768px 17px;
   }
 
   @media (min-width: $desktop) {
     width: 91%;
     max-width: 1050px;
-    padding-top: 40px;
+    padding-top: 80px;
+    margin-bottom: 0;
     background-size: 1050px 23px;
   }
 }
@@ -77,7 +78,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop) {
@@ -90,7 +91,7 @@
 .description__item {
   position: relative;
   display: block;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   padding-top: 68px;
   font-size: 17px;
   font-weight: 700;
@@ -101,7 +102,7 @@
     flex-shrink: 0;
     flex-basis: 49%;
     padding-right: 1%;
-    margin-bottom: 23px;
+    margin-bottom: 32px;
     padding-top: 66px;
     font-size: 20px;
     line-height: 1.1;
@@ -121,8 +122,8 @@
   &--ecology::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -140,8 +141,8 @@
   &--price::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -159,8 +160,8 @@
   &--like::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -178,8 +179,8 @@
   &--hand::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -197,8 +198,8 @@
   &--support::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -216,8 +217,8 @@
   &--gift::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
