@@ -2,9 +2,11 @@
   position: relative;
   background-color: $background;
   border: 1px solid transparent;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet) {
+    margin-bottom: 31px;
+
     &::before {
       content: "";
       position: absolute;
@@ -60,7 +62,7 @@
     flex-basis: 87%;
     flex-grow: 1;
     text-align: right;
-    padding-top: 5px;
+    padding-top: 7px;
     text-decoration: none;
     font-size: 15px;
     line-height: 1.6;
@@ -82,7 +84,7 @@
   font-weight: 700;
   color: $brown;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
   margin-left: 0;
   margin-right: 0;
 

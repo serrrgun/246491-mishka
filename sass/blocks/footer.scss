@@ -78,6 +78,10 @@
     margin-top: 18px;
   }
 
+  @media (min-width: $desktop) {
+    margin-top: 16px;
+  }
+
   &:active {
     color: rgba($black, $oppacity);
   }
