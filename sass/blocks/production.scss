@@ -3,7 +3,7 @@
   background-color: $background-gray;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -14px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -80,7 +80,7 @@
   flex-basis: 200px;
   font-weight: 700;
   min-height: 212px;
-  padding-top: 90px;
+  padding-top: 73px;
   margin: 0;
   text-align: center;
   font-size: 27px;
@@ -126,8 +126,8 @@
   position: relative;
   display: block;
   padding-left: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 27px;
   text-align: left;
   font-size: 19px;
   font-weight: 700;

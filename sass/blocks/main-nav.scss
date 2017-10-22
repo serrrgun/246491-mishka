@@ -2,7 +2,7 @@
   position: relative;
   background-color: $white;
   border-bottom: 1px solid $border-color;
-  min-height: 78px;
+  min-height: 0;
 
   @media (min-width: $tablet) {
     height: 90px;
@@ -38,7 +38,7 @@
 }
 
 .main-nav__logo--link {
-  margin-top: 25px;
+  margin-top: 16px;
   margin-right: 0;
   margin-bottom: 14px;
   margin-left: 0;
@@ -98,8 +98,8 @@
 .main-nav--closed .main-nav__toggle {
   position: absolute;
   display: block;
-  top: 15px;
-  right: 30px;
+  top: 12px;
+  right: 35px;
   width: 22px;
   height: 22px;
   background-color: $white;
@@ -108,6 +108,7 @@
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 
   @media (min-width: $tablet) {
     display: none;
@@ -117,8 +118,8 @@
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   display: block;
-  top: 15px;
-  right: 30px;
+  top: 12px;
+  right: 35px;
   width: 22px;
   height: 22px;
   background-color: $white;
@@ -127,6 +128,7 @@
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 
   @media (min-width: $tablet) {
     display: none;

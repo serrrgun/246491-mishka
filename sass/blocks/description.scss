@@ -22,30 +22,25 @@
   padding-top: 0;
   padding-bottom: 0;
 
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 320px 7px;
+
   @media (min-width: $tablet) {
     width: 87%;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0;
     padding-top: 0;
+    background-size: 768px 17px;
   }
 
   @media (min-width: $desktop) {
     width: 91%;
     max-width: 1050px;
     padding-top: 40px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    height: 10px;
-    width: 100%;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: 1050px 23px;
   }
 }
 
