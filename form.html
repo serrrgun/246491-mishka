@@ -91,7 +91,7 @@
               <input class="form__checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
               <label class="form__checkbox-label" for="gray">Серый</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-              <label class="form__checkbox-label" for="tiffany">&laquo;Тиффани&laquo;</label>
+              <label class="form__checkbox-label" for="tiffany">&laquo;Тиффани&raquo;</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="black" id="black">
               <label class="form__checkbox-label" for="black">Черный</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="pink" id="pink">
@@ -203,21 +203,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
