@@ -25,6 +25,7 @@
   }
 
   @media (min-width: $desktop) {
+    width: 1050px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
