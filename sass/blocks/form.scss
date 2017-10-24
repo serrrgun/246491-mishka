@@ -335,6 +335,13 @@
   }
 }
 
+.form__checkbox-label--pink {
+  @media (min-width: $desktop) {
+    margin-left: 2px;
+    width: 30%
+  }
+}
+
 .form__checkbox-label:nth-of-type(even) {
   @media (min-width: $tablet) {
     width: 46%;
