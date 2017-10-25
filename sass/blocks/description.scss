@@ -1,7 +1,7 @@
 .description {
   position: relative;
   padding-top: 8px;
-  padding-bottom: 45px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
     padding-top: 22px;
@@ -15,28 +15,39 @@
 }
 
 .description__content {
+  position: relative;
   margin: 0 auto;
   padding-left: 29px;
   padding-right: 29px;
-  padding-top: 0;
+  padding-top: 16px;
   padding-bottom: 0;
+  background-color: transparent;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 320px 7px;
 
   @media (min-width: $tablet) {
     width: 87%;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 24px;
+    background-size: 768px 17px;
   }
 
   @media (min-width: $desktop) {
     width: 91%;
     max-width: 1050px;
-    padding-top: 40px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    background-size: 1050px 23px;
   }
 }
 
 .description__title {
+  position: relative;
+  display: block;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
@@ -67,7 +78,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop) {
@@ -80,7 +91,7 @@
 .description__item {
   position: relative;
   display: block;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   padding-top: 68px;
   font-size: 17px;
   font-weight: 700;
@@ -91,7 +102,7 @@
     flex-shrink: 0;
     flex-basis: 49%;
     padding-right: 1%;
-    margin-bottom: 23px;
+    margin-bottom: 32px;
     padding-top: 66px;
     font-size: 20px;
     line-height: 1.1;
@@ -111,8 +122,8 @@
   &--ecology::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -130,8 +141,8 @@
   &--price::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -149,8 +160,8 @@
   &--like::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -168,8 +179,8 @@
   &--hand::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -187,8 +198,8 @@
   &--support::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -206,8 +217,8 @@
   &--gift::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -5px;
+    top: 10px;
+    left: 0;
     width: 60px;
     height: 40px;
     background-color: $white;
@@ -216,136 +227,3 @@
     background-position: 7px 5px;
   }
 }
-
-/*.description {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
-
-  @media (min-width: $tablet) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-.description h2 {
-  font-size: 25px;
-  color: $black;
-
-  @media (min-width: $tablet) {
-    font-size: 43px;
-  }
-}
-
-.description__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  @media (min-width: $tablet) {
-    display: flex;
-  }
-}
-
-.description__wrapper {
-  @media (min-width: $tablet) {
-    //
-  }
-}
-
-.description__item {
-  position: relative;
-  height: 120px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 50px;
-  font-size: 17px;
-  font-weight: 700;
-  color: $black;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet) {
-    font-size: 20px;
-  }
-
-  &--ecology::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-flower.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--price::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-money.svg");
-    background-repeat: no-repeat;
-    background-position: 5px 2px;
-  }
-
-  &--like::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 10px 7px;
-  }
-
-  &--hand::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-ball.svg");
-    background-repeat: no-repeat;
-    background-position: 7px 5px;
-  }
-
-  &--support::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 5px;
-  }
-
-  &--gift::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: 60px;
-    height: 40px;
-    background-color: $white;
-    background-image: url("../img/icon-feature-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 7px 5px;
-  }
-}
-*/

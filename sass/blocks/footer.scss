@@ -37,7 +37,8 @@
 
   @media (min-width: $tablet) {
     display: block;
-    margin-top: 20px;
+    margin-top: 26px;
+    padding-bottom: 32px;
 
     &:hover .footer__logo-icon {
       fill: $green-darken-hover;
@@ -51,45 +52,6 @@
 
 .footer__logo-icon {
   fill: $brown;
-}
-
-.social {
-  padding-top: 26px;
-  padding-right: 0;
-  padding-bottom: 20px;
-  padding-left: 0;
-  text-align: center;
-  border-bottom: 1px solid $border-footer;
-
-  @media (min-width: $tablet) {
-    padding-top: 0;
-    margin-left: 80px;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-top: 0;
-    display: inline-block;
-    vertical-align: top;
-    border-bottom: none;
-  }
-}
-
-.social__item {
-  background-color: transparent;
-
-  &:hover .social__item-icon {
-    fill: $green-darken-hover;
-  }
-
-  &:active .social__item-icon {
-    fill: rgba($green-darken-hover, $oppacity);
-  }
-}
-
-.social__item-icon {
-  margin-right: 10px;
-  margin-left: 12px;
-  fill: $gray;
-  width: 24;
 }
 
 .footer__developer {
@@ -112,6 +74,14 @@
   font-weight: 700;
   cursor: auto;
 
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 16px;
+  }
+
   &:active {
     color: rgba($black, $oppacity);
   }
@@ -133,63 +103,3 @@
   vertical-align: top;
   fill: $green-lighten;
 }
-
-/*.footer {
-  display: flex;
-  align-items: center;
-
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: $background-gray;
-
-  @media (min-width: $tablet) {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-  }
-}
-
-.footer__container {
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-top: 37px;
-    padding-bottom: 40px;
-  }
-}
-
-.footer__logo {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
-  }
-}
-
-.footer__developer {
-  display: flex;
-}
-
-.footer__by {
-  font-size: 19px;
-  color: $black;
-  font-weight: 700;
-  margin-right: 20px;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet) {
-    margin-left: 80px;
-  }
-}
-
-.social__item {
-  width: 50px;
-}*/

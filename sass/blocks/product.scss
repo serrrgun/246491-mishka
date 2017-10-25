@@ -14,7 +14,7 @@
   padding-top: 0;
 
   @media (min-width: $tablet) {
-    padding-bottom: 62px;
+    padding-bottom: 0;
     margin-top: 72px;
     width: 87%;
     padding-left: 50px;
@@ -27,7 +27,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 106px;
+    padding-bottom: 0;
     margin-top: 123px;
   }
 }
@@ -48,7 +48,23 @@
     flex-basis: 30%;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-right: 4.76%;
+    margin-right: 5%;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+  }
+}
+
+.product__post:nth-child(1) {
+  margin-top: 7px;
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }
 
@@ -81,7 +97,7 @@
 }
 
 .product__post-image {
-  //
+  height: 195px;
 }
 
 .product__info {
@@ -98,7 +114,7 @@
     flex-wrap: nowrap;
     flex-grow: 1;
     box-sizing: border-box;
-    padding-top: 22px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop) {
@@ -120,6 +136,13 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 6px;
+    padding-right: 0;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 4px;
+    margin-bottom: 0;
   }
 }
 
@@ -132,6 +155,14 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  &:hover {
+    color: rgba($black, $oppacity-light);
+  }
+
+  &:active {
+    color: rgba($black, $oppacity);
   }
 }
 
@@ -159,11 +190,13 @@
   @media (min-width: $tablet) {
     margin-top: auto;
     padding-bottom: 24px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop) {
     padding-bottom: 26px;
-    padding-top: 16px;
+    padding-top: 18px;
+    margin-bottom: 5px;
   }
 }
 
@@ -192,42 +225,12 @@
 
 .product-buy__basket-icon {
   fill: rgba($black, $oppacity);
+
+  &:hover {
+    fill: $green-lighten;
+  }
+
+  &:active {
+    fill: rgba($green-lighten, $oppacity);
+  }
 }
-
-
-/*.product {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  border-bottom: 1px solid $border-color;
-}
-
-.product__info {
-  margin-left: 8.75%;
-  margin-right: 8.75%;
-}
-
-.product__title {
-  display: block;
-  margin: 0;
-  margin-top: 25px;
-}
-
-.product__title-link {
-  font-size: 17px;
-  font-weight: 700;
-  color: $black;
-}
-
-.product__description {
-  margin-bottom: 25px;
-  font-size: 15px;
-  color: $gray;
-  font-weight: 400;
-}
-
-.product-buy {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border-top: 1px solid $border-color;
-}*/

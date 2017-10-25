@@ -58,16 +58,15 @@
       <section class="production production__block--image">
         <div class="production__container">
           <a href="#" class="production__delivery">Бесплатная доставка по России</a>
-          <h1 class="production__caption">
-            Милые штучки<br class="production__caption--transference"> ручной<br class="production__caption--transference">  работы для дома
-          </h1>
+          <h2 class="production__caption">
+            Милые штучки ручной работы&nbsp;для&nbsp;дома
+          </h2>
           <div class="production__item-container">
             <a href="#" class="production__item production__item--interior">Предметы<br>интерьера</a>
             <a href="#" class="production__item production__item--toys">Детские<br>игрушки</a>
           </div>
         </div>
       </section>
-      <div class="special__inner">
       <article class="special">
         <h2 class="special__item-title">Вязаные корзинки</h2>
         <h4 class="special__item-of-week">товар недели</h4>
@@ -108,7 +107,6 @@
           </div>
         </div>
       </article>
-      </div>
       <section class="description">
         <div class="description__content">
           <h2 class="description__title">Коротко о нас:</h2>
@@ -153,7 +151,7 @@
             </div>
             <div class="contacts__address-row">
               <div class="contacts__param">адрес:</div>
-              <div class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</div>
+              <div class="contacts__value">г. Санкт-Петербург,<br> ул. Большая<br class="contacts__br"> Конюшенная,<br> д. 19/8, офис 101</div>
             </div>
           </div>
         </div>
@@ -188,7 +186,7 @@
           <a href="#" class="social__item social__item--tw">
             <span class="visually-hidden">твиттер</span>
             <svg class="social__item-icon" width="27" height="34">
-              <use xlink: href="#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </div>
@@ -203,34 +201,23 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <h3 class="modal__title">добавить в корзину</h3>
-      <p class="modal__choice">Выберете размер:</p>
-      <form method="get" class="modal__form">
-        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--s" id="s" value="s" checked>
-        <label for="s" class="modal__check">s</label>
-        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--m" id="m" value="s" >
-        <label for="m" class="modal__check">m</label>
-        <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--l" id="l" value="s" >
-        <label for="l" class="modal__check">l</label>
-        <button type="submit" class="modal__button button">добавить</button>
-      </form>
+    <div class="modal__wrapper">
+      <div class="modal">
+        <form method="get" class="modal__form">
+          <h3 class="modal__title">добавить в корзину</h3>
+          <p class="modal__choice">Выберете размер:</p>
+          <div class="modal__size">
+            <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--s" id="s" value="s" checked>
+            <label for="s" class="modal__check">s</label>
+            <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--m" id="m" value="s" >
+            <label for="m" class="modal__check">m</label>
+            <input type="radio" name="check-size" class="visually-hidden modal__radio modal__radio--l" id="l" value="s" >
+            <label for="l" class="modal__check">l</label>
+          </div>
+          <button type="submit" class="modal__button ">добавить</button>
+        </form>
+      </div>
     </div>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
