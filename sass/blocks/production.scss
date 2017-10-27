@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 100%;
+    background-size: 1250px 746px;
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -101,10 +101,9 @@
 
   @media (min-width: $desktop) {
     font-size: 53px;
-    line-height: 1.1;
+    line-height: 57px;
     flex-basis: 630px;
-    padding-left: 19%;
-    padding-right: 19%;
+    padding-top: 113px;
   }
 }
 
@@ -128,6 +127,7 @@
   padding-left: 30px;
   padding-top: 28px;
   padding-bottom: 27px;
+  padding-right: 75%;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
@@ -139,6 +139,7 @@
     padding-top: 28px;
     padding-bottom: 30px;
     padding-left: 30px;
+    padding-right: 30%;
     font-size: 20px;
     line-height: 1.5;
 
